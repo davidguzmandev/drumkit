@@ -64,5 +64,8 @@ for (let i = 0; i < numberOfButtons; i++) {
 function buttonAnimation(currentKey) {
     var activeButton = document.querySelector("."+currentKey);
     activeButton.classList.add("pressed");
-    console.log(activeButton);
+    
+    setTimeout(() => {
+        activeButton.classList.remove("pressed");
+    }, 100);
 }
